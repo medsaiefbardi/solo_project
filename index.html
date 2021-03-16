@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="FIB.css"/>
+   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>!CARPEDIEM!</title>
+  </head>
+  <body> 
+      <h1 class = 'H'>Let The Game Begin</h1>
+ <button id = 'P1'>Task1</button>
+ <div class ='p' id = 'p1'></div>
+ <button id = 'test1' class="tests">Test it !</button>
+ <div class='res' id ='re1' type = 'Boolean'></div>
+ <button id ='P2'>Task2</button>
+ <div class ='p' id = 'p2'></div>
+ <button class ='tests' id = 'test2'>Test it !</button>
+ <div class='res' id ='re2' type = 'Boolean'></div>
+ <button id = 'P3'>Task3</button>
+ <div  class ='p' id = 'p3'></div>
+ <button class ='tests' id = 'test3'>Test it !</button>
+ <div class='res' id ='re3' type = 'Boolean'></div>
+ <label for = 'word'></label>
+ 
+ 
+ <script>
+     $('#P1').click(function(){
+        var $body = $('#p1');
+      $body.html('') ;  
+          var paragraph1=paragraphs[0];
+          var $paragraph1 =$('<div></div>');
+         
+          $paragraph1.html(paragraph1.pp1 +'<input type="text" id ="w1" name="word">' +paragraph1.pp2+'<input type="text" id ="w2" name="word">' + paragraph1.pp3 + '<input type="text" id ="w3" name="word">');
+          $paragraph1.appendTo($body);
+        }
+     );
+      $('#test1').click(function (){
+          var $body = $('#re1');
+          $body.html('');
+
+         
+         
+          
+          if($('#w1').value === paragraphs[0].w1 && $('#w2').value===paragraphs[0].w2 && $('#w3').value === paragraphs[0].w3){
+           alert('TRUE')
+          
+          } else {
+            alert('FALSE')
+          } 
+         
+        });
+
+     $('#P2').click(function(){
+        var $body = $('#p2');
+      $body.html('') ;  
+          var paragraph2=paragraphs[1];
+          var $paragraph2 =$('<div></div>');
+          $paragraph2.html(paragraph2.pp1 +'<input type="text" id ="w21" name="word">' +paragraph2.pp2+'<input type="text" id ="w22" name="word">' + paragraph2.pp3 + '<input type="text" id ="w23" name="word">');
+         
+          $paragraph2.appendTo($body);
+          
+      }
+     );
+     $('#test2').click(function (){
+          var $body = $('#re2');
+          $body.html('');
+         
+          if($('#w21').value === paragraphs[1].w1 && $('#w22').value===paragraphs[1].w2 && $('#w23').value === paragraphs[1].w3){
+           alert('TRUE')
+          
+          } else {
+            alert('FALSE')
+          } 
+         
+        });
+
+
+     $('#P3').click(function(){
+        var $body = $('#p3');
+      $body.html('') ;  
+          var paragraph3=paragraphs[2];
+          var $paragraph3 =$('<div></div>');
+          $paragraph3.html(paragraph3.pp1 +'<input type="text" id ="w31" name="word">' +paragraph3.pp2+'<input type="text" id ="w32" name="word">' + paragraph3.pp3 + '<input type="text" id ="w33" name="word">');
+          
+          $paragraph3.appendTo($body);
+          
+      }
+     );
+     $('#test3').click(function (){
+          var $body = $('#re3');
+          $body.html('');
+         
+          if($('#w31').value === paragraphs[2].w1 && $('#w32').value===paragraphs[2].w2 && $('#w33').value === paragraphs[2].w3){
+           alert('TRUE')
+          
+          } else {
+            alert('FALSE')
+          } 
+         
+        });
+
+
+     
+ </script>
+ 
+<script src="mainjs.js"> </script>
+  </body>
+<p id='help'>These are the words that you will need to fill in the blanks   :   CARPE DIEM!   ,   goals   ,   your vibe   ,   Just do it BROOO   ,   CARPE DIEM!   ,   away   ,   easy   ,   CARPE DIEM!   ,   try to solve it  .</p>
+</html>
